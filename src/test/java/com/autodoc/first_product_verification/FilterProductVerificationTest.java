@@ -1,4 +1,4 @@
-package com.autodoc.hw11;
+package com.autodoc.first_product_verification;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -13,14 +13,14 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class FilterVerificationTest {
+public class FilterProductVerificationTest {
     private static final Long IMPLICITLY_WAIT_SECONDS = 10L;
     private static final Long ONE_SECOND_DELAY = 1000L;
     private final String baseURL = "https://front_test:YNA709O1mRPmsgww@test.pkwteile.de";
     private WebDriver driver;
 
     private static void delaySec() {
-        delaySec(3);
+        delaySec(5);
     }
 
     private static void delaySec(int seconds) {
@@ -56,7 +56,7 @@ public class FilterVerificationTest {
     }
 
     @Test
-    public void verifyQuant() {
+    public void verifyFirstProductArticte() {
 
         String inputValue="SKBP-0011162";
 
@@ -67,7 +67,7 @@ public class FilterVerificationTest {
          if (article.contains(inputValue)){
         System.out.println("The product with search article is first!");
     } else {
-        System.out.println("The product isn't first "+article);}
+        System.out.println("The product isn't first, the first article is " +article);}
 }
     @AfterClass
     public void afterClass () {

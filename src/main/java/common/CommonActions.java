@@ -10,7 +10,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static common.Config.PLATFORM_AND_BROWSE;
-import static constant.Constant.IMPLICIT_WAIT;
+import static constant.Constant.TimeoutVariable.IMPLICIT_WAIT;
 
 public class CommonActions {
     public static WebDriver createDriver(){

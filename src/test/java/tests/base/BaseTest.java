@@ -8,6 +8,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeTest;
 import pages.base.BasePage;
 import pages.pkw_main.PkwMainPage;
+import tests.search.SearchTest;
 
 public class BaseTest {
     protected WebDriver driver = CommonActions.createDriver();
